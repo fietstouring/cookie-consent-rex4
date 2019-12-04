@@ -1,0 +1,35 @@
+cookie_consent_cookie_consent = Cookie Consent für Redaxo4
+cookie_consent_settings = Einstellungen
+cookie_consent_scripts = Javascripts
+cookie_consent_activate = Aktivieren
+
+cookie_consent_help = Hilfe
+cookie_consent_help_file_msg = Mit dem AddOn kann das Cookie Consent Script von osano osano.com/cookieconsent komfortabel in eine Redaxo 4 Installation eingebaut werden. Als Vorlage diente das entsprechende Addon für Redaxo 5. Für das Addon wurden "babelfish" und "Tracking Code" von RexDude als Vorlage verwendet. Es enthält daher Code von RexDude. Danke!
+cookie_consent_configfile_update = Einstellungen wurden gespeichert.
+cookie_consent_configfile_nosave = Einstellungen konnten nicht gespeichert werden!
+cookie_consent_configfile_nowrite = Konfigurationsdatei "{0}" ist nicht beschreibbar!
+cookie_consent_save_button = Speichern
+cookie_consent_help_msg = Gib Cookie Consent in Deinem Template vor dem Header-End-Tag aus:
+cookie_consent_install_make_dir = Der Ordner "/redaxo/include/{0}/" kann nicht angelegt werden, überprüfen Sie die Schreibrechte oder legen Sie den Ordner von Hand an und geben ihm Schreibrechte.
+cookie_consent_install_perm_dir = Der Ordner "/redaxo/include/{0}/" benötigt Schreibrechte!
+
+cookie_consent_texts = Texte
+cookie_consent_button_content = Text Button OK
+cookie_consent_deny_content = Text Button Deny
+cookie_consent_privacy = Link zu Privacy Policy
+cookie_consent_load_js = JS automatisch laden
+cookie_consent_load_css = CSS automatisch laden
+cookie_consent_load_after_consent = nach Bestätigung nicht mehr laden
+cookie_consent_theme = Theme
+cookie_consent_position = Position
+cookie_consent_cookiebar_background = Cookie-Bar Hintergrund 
+cookie_consent_cookiebar_color = Cookie-Bar Textfarbe
+cookie_consent_cookiebar_link = Cookie-Bar Linkfarbe
+cookie_consent_btn_ok_background = Button-OK Hintergrund
+cookie_consent_btn_ok_color = Button-OK Textfarbe
+cookie_consent_cookie_expire = Cookie Expire (Tage)
+cookie_consent_main_message = Text für Cookie-Bar
+cookie_consent_link_text = Text Datenschutz-Link
+cookie_consent_tracking_code = Tracking-Code in Funktion gewrappt oder anderes JS 
+cookie_consent_cookie_options = Custom Options für Cookie Consent Script
+cookie_consent_nowrap_js = Javascript, wird ausgegegen wenn die Einstellung "nach Bestätigung nicht mehr laden" aktiv ist (optional)
