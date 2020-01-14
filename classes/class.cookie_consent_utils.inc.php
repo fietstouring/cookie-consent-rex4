@@ -81,10 +81,6 @@ class rex_cookie_consent_utils {
 	public static function appendToPageHeader($params) {
 		global $REX;
 
-		$insert = '<!-- BEGIN tracking_code -->' . PHP_EOL;
-		$insert .= '<link rel="stylesheet" type="text/css" href="../' . self::getMediaAddonDir() . '/tracking_code/backend.css" />' . PHP_EOL;
-		$insert .= '<!-- END tracking_code -->';
-
 		if (self::checkColorizer()) {
 			$insert .= '<!-- BEGIN Colorpicker -->' . PHP_EOL;
 			$insert .= '<link rel="stylesheet" type="text/css" href="../' . self::getMediaAddonDir() . '/be_utilities/plugins/colorizer/colorpicker/colorpicker.css" />' . PHP_EOL;

@@ -15,7 +15,7 @@ require($REX['INCLUDE_PATH'] . '/addons/cookie_consent/classes/class.cookie_cons
 
 // fetch all strings for later usage with getString method
 if (!$REX['SETUP']) {
-	rex_register_extension('ADDONS_INCLUDED', 'rex_cookie_consent::getTrackingCode');
+	rex_register_extension('ADDONS_INCLUDED', 'rex_cookie_consent::getCookieConsent');
 }
 
 // includes

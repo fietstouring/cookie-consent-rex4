@@ -47,10 +47,10 @@ if ($func == 'update') {
 
 					<?php 
 					foreach ($REX['CLANG'] as $clangId => $clangName) {
-						$main_message = $REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['main_message'] ?? '';
-						$button_content = $REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['button_content'] ?? '';
-						$deny_content = $REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['deny_content'] ?? '';
-						$link_content = $REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['link_content'] ?? '';
+						$main_message = isset($REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['main_message']) ? $REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['main_message'] : '';
+						$button_content = isset($REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['button_content']) ? $REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['button_content'] : '';
+						$deny_content = isset($REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['deny_content']) ? $REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['deny_content'] : '';
+						$link_content = isset($REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['link_content']) ? $REX['ADDON']['cookie_consent']['settings']['lang'][$clangId]['link_content'] : '';
 					?>
 
 						<fieldset class="rex-form-col-1">
