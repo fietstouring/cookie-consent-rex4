@@ -54,8 +54,9 @@ class rex_cookie_consent {
         $color_main_content = empty($REX['ADDON']['cookie_consent']['settings']['cookiebarColor']) ? '#fff' : $REX['ADDON']['cookie_consent']['settings']['cookiebarColor'];
         $color_button_background = empty($REX['ADDON']['cookie_consent']['settings']['buttonOKBackgroundColor']) ? 'yellow' : $REX['ADDON']['cookie_consent']['settings']['buttonOKBackgroundColor'];
         $color_button_content = empty($REX['ADDON']['cookie_consent']['settings']['buttonOKColor']) ? 'black' : $REX['ADDON']['cookie_consent']['settings']['buttonOKColor'];
-        $link = $REX['ADDON']['cookie_consent']['settings']['privacy'] ?? '';
-        $link_content = empty($REX['ADDON']['cookie_consent']['settings']['link_content']) ? self::DEFAULT_LINK_CONTENT : $REX['ADDON']['cookie_consent']['settings']['link_content'];
+        $color_link = empty($REX['ADDON']['cookie_consent']['settings']['cookiebarLink']) ? 'yellow' : $REX['ADDON']['cookie_consent']['settings']['cookiebarLink'];
+        $link = empty($REX['ADDON']['cookie_consent']['settings']['privacy']) ? '' : $REX['ADDON']['cookie_consent']['settings']['privacy'];
+        $link_content = empty($REX['ADDON']['cookie_consent']['settings']['lang'][$curlang]['link_content']) ? self::DEFAULT_LINK_CONTENT : $REX['ADDON']['cookie_consent']['settings']['lang'][$curlang]['link_content'];
 
     $object = [
         'theme' => $theme,
@@ -86,6 +87,7 @@ class rex_cookie_consent {
         'popup' => [
             'background' => rex_cookie_consent_utils::string_escape($color_background),
             'text' => rex_cookie_consent_utils::string_escape($color_main_content),
+            'link' => rex_cookie_consent_utils::string_escape($color_link)
         ],
         'button' => [
             'background' => rex_cookie_consent_utils::string_escape($color_button_background),
@@ -125,7 +127,7 @@ class rex_cookie_consent {
         $out .= self::getJs();
     }
 
-	$out .= '<script async>'.PHP_EOL.'window.addEventListener("load", function() {'.$jsConfigCode . PHP_EOL . '});' . PHP_EOL . '</script>';
+	$out .= '<script>'.PHP_EOL.'window.addEventListener("load", function() {'.$jsConfigCode . PHP_EOL . '});' . PHP_EOL . '</script>';
 
 	return $out;
 
